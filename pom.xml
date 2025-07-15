@@ -12,7 +12,7 @@
 	<artifactId>siloamutils</artifactId>
 	<version>1.0.1</version>
 
-	<name>SiloamUtils</name>
+	<name>siloamutils</name>
 	<description>Utility classes</description>
 	<packaging>jar</packaging>
 	
