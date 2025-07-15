@@ -3,10 +3,14 @@ package com.siloamusa.utils.generics;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 public class FormatUtils {
-    
+   
+    public static final DateTimeFormatter ZDT_FORMATTER = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+
    public static String clearNull(String sourceString) {
         if (sourceString == null) {
             return "";
@@ -32,4 +36,13 @@ public class FormatUtils {
         }
         return fmtString;
     }
+
+    /*
+     * Get current date and time in dd/MM/yyyy HH:mm:ss format.
+     */
+    public static String getCurDateTimeFmt1() {
+        String date_time = ZDT_FORMATTER.format( ZonedDateTime.now() );
+        return date_time;
+    }
+
 }
