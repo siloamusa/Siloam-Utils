@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.siloamusa</groupId>
-	<artifactId>SiloamUtils</artifactId>
+	<artifactId>siloamutils</artifactId>
 	<version>1.0.1</version>
 
 	<name>SiloamUtils</name>
