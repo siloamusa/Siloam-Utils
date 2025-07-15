@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.siloamusa</groupId>
-	<artifactId>methodsecurity</artifactId>
+	<artifactId>Utils</artifactId>
 	<version>1.0.1</version>
 
-	<name>SiloamMethodSecurity</name>
-	<description>Method Security</description>
+	<name>SiloamUtils</name>
+	<description>Utility classes</description>
 	<packaging>jar</packaging>
 	
 	  <distributionManagement>
