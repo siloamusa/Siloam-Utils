@@ -36,7 +36,20 @@ public class FormatUtils {
         }
         return fmtString;
     }
-
+    /*
+     * Formats a string representing an amount into a US locale format with commas and decimal points.
+     */
+    public static String formatAmount(BigDecimal amount) {
+        String fmtString = "";
+        DecimalFormat dfUS = new DecimalFormat("##,###,##0.00", DecimalFormatSymbols.getInstance(Locale.US));  
+        try{
+            fmtString = dfUS.format(amount);
+        }catch(Exception e){
+            fmtString = ""+amount; // Fallback to original amount if parsing fails
+            e.printStackTrace();
+        }
+        return fmtString;
+    }
     /*
      * Get current date and time in dd/MM/yyyy HH:mm:ss format.
      */
