@@ -31,6 +31,9 @@ public class EmailServiceImpl implements Runnable {
 			MimeMessage message = javaMailSender.createMimeMessage();
 			message.setFrom(new InternetAddress(emldetail.getFrom()));
 			for (String recipient : emldetail.getRecipient()) {
+				if(recipient == null || recipient.isEmpty()) {
+					continue; // Skip null or empty recipients
+				}
 				message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress(recipient));
 			}
 			message.setSubject(emldetail.getSubject());
