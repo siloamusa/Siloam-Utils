@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.siloamusa</groupId>
-	<artifactId>Utils</artifactId>
+	<artifactId>SiloamUtils</artifactId>
 	<version>1.0.1</version>
 
 	<name>SiloamUtils</name>
@@ -20,7 +20,7 @@
 	    <repository>
 	      <id>github</id>
 	      <name>GitHub Siloam Apache Maven Packages</name>
-	      <url>https://maven.pkg.github.com/siloamusa/Siloam-MethodSecurity</url>
+	      <url>https://maven.pkg.github.com/siloamusa/Siloam-SiloamUtils</url>
 	    </repository>
 	  </distributionManagement>
 
@@ -35,8 +35,9 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		  </dependency>
+			<artifactId>spring-boot-starter-mail</artifactId>
+			<version>2.5.6</version>
+		</dependency>
 		  <dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
